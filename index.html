@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Music Player</title>
+  <!-- font awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="js/mediaelement-and-player.min.js"></script>
+  <link rel="stylesheet" href="styles.css" media="screen">
+  <link rel="stylesheet" href="js/index.js">
+  <link rel="stylesheet" href="js/mediaElement-and-player.min.js">
+  <link rel="stylesheet" href="js/mediaElement-flash-audio.swf">
+  <!-- end Audio Player CSS & Scripts -->
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- As a heading -->
+  <nav class="flex-navbar navbar-light bg-dark">
+    <h1 class="navbar-brand mb-0 h1">MUSIC PLAYER</h1>
+  </nav>
+  <div class="container">
+
+
+    <div class="flex-container">
+      <div class="player">
+        <div class="player-head">
+          <img src="images/music.jpg" alt="cover" class="song-cover">
+
+
+        </div>
+        <div class="player-body">
+          <img src="images/music.jpg" alt="cover" class="song-cover">
+          <div class="album-info">
+            <span class="album-title">Randomzz</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <audio id="audio-player" src="music/jarico-islandncsbestof-1Mm2M6Qccq.mp3" type="audio/mp3" controls="controls"></audio>
+
+  <div id="songPlay" onclick="play('song')"></div>
+  <div id="songPause" onclick="pause()"></div>
+  <div id="songPlayPause" onclick="playPause('song')"></div>
+  <div id="songStop" onclick="stopSong()"></div>
+  <div id="volumeUp" onclick="changeVolume(10, 'up')"></div>
+  <div id="volumeDown" onclick="changeVolume(10, 'down')"></div>
+  <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
+  <!-- Song Slider tracks progress on song time change, if you click it sets the distance into the song
+based on the percentage of where was clicked -->
+  <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+body {
+  font-family: Verdana, sans-serif;
+  background: #434e52;
+  overflow: hidden;
+  text-align: center;
+}
+.h1{
+  padding: 15px;
+  font-size: 2.5rem;
+}
+.flex-navbar {
+  text-align: center;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
+}
+.container{
+
+  padding: 5px 10px;
+}
+.flex-container {
+  height: 100%;
+  padding-top: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+
+}
+
+.player {
+  position: relative;
+  background: #434e52;
+  border-radius: 0 0 11px 11px;
+  overflow: hidden;
+}
+
+.player-head {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: inset 0 0 110px rgba(0, 0, 0, 0, 3);
+}
+
+.player-head:before {
+  position: absolute;
+  content: '';
+  width: 370px;
+  height: 200px;
+  border-radius: 9px;
+  margin-left: 25px;
+  margin-top: 81px;
+  display: block;
+  background: rgba(163, 0, 50, 0.1);
+  box-shadow: inset 40px 40px 105px 20px rgba(0, 0, 0, 0.1),
+    inset -40px -40px 105px 20px rgba(0, 0, 0, 0, 0.1);
+}
+
+.song-cover {
+  width: 370px;
+  margin-top: 80px;
+  border-top: 3px solid;
+  border-radius: 9px;
+}
+
+.player-body {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+  border-top: 1px solid rgb(111, 2, 41, 0.7);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.player-body img {
+  margin-top: -170px;
+  filter: blur(21px);
+}
+
+.album-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+.album-info {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.song-title {
+  display: block;
+  font-size: 14px;
+  color: #fffffb;
+  padding: 15px 0 5px 0;
+  text-transform: uppercase;
+}
+
+div.audio-player {
+  width: 100%;
+  position: relative;
+  width: 500px;
+  height: 120px;
+  background: #4c4e5a;
+  background: -webkit-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+  background: -moz-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+  background: -o-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+  background: -ms-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+  background: linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
